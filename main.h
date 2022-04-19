@@ -46,4 +46,15 @@ int printf_string(va_list val);
 int _putchar(char c);
 int _printf(const char *format, ...);
 
+/**
+ * struct identifierStruct - structure definition of a printTypeStruct
+ * @indentifier: type
+ * @printer: function to print
+ */
+typedef struct identifierStruct
+{
+char *indentifier;
+int (*printer)(va_list);
+} identifierStruct;
+
 #endif
